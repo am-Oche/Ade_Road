@@ -1,0 +1,23 @@
+{
+  "expo": {
+    "name": "AdeRoad",
+    "slug": "aderoad-mobile",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "automatic",
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.example.aderoad",
+      "infoPlist": {
+        "NSLocationWhenInUseUsageDescription": "AdeRoad uses your location to set a roadside pickup point and share it with your emergency contacts when you choose SOS."
+      }
+    },
+    "android": {
+      "package": "com.example.aderoad",
+      "permissions": ["ACCESS_COARSE_LOCATION", "ACCESS_FINE_LOCATION"]
+    },
+    "plugins": [
+      ["expo-location", {"locationWhenInUsePermission": "Allow AdeRoad to locate your roadside pickup and prepare an SOS location message."}]
+    ]
+  }
+}
